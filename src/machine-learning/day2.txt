@@ -1,0 +1,32 @@
+models:
+- linear regression
+- logistic regression
+- suppport vector machines
+ensemble methods
+- combining muliple models
+- adaboost
+
+logits = logistic regression
+
+combining models:
+- have multi models create predictions
+-  combine the predictions
+        - regression: average
+        - classification: most likely predictions
+- does it introduce variance?
+    - only if bias is correlated
+
+! central limit theorem http://mathworld.wolfram.com/CentralLimitTheorem.html
+! Condorcet jury theorem
+
+nasa turbofan degradation
+
+adaboost
+- start with one decision treem trained on the whole data set
+- see which data points your decision trees do pooorly on
+- to get the data point to train the next decisition tree on, sample the dataset, giving more weight to points that your decision forest does pooorly on
+    - weight each decision tree by its error rate
+- eventually you end up with a well rounded forest
+- guaranteed to converge to 100% accuracy
+    - if you can get new learners w/ >50% accuracy
+    

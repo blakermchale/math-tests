@@ -1,0 +1,2 @@
+bandpass filter takes center
+gammatone: queue , flat low frequency tail
